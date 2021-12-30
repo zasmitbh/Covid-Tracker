@@ -1,0 +1,191 @@
+MONTH,State ,NO. OF CASES,NO. OF DEATHS
+Jun-20,Uttar Pradesh,657,15
+Jul-20,Uttar Pradesh,3527,40
+Aug-20,Uttar Pradesh,5433,41
+Sep-20,Uttar Pradesh,4199,69
+Oct-20,Uttar Pradesh,1946,24
+Nov-20,Uttar Pradesh,2151,26
+Dec-20,Uttar Pradesh,914,12
+Jan-21,Uttar Pradesh,227,6
+Feb-21,Uttar Pradesh,106,10
+Mar-21,Uttar Pradesh,1107,56
+Apr-21,Uttar Pradesh,34136,1295
+May-21,Uttar Pradesh,22529,238
+Jun-21,Uttar Pradesh,188,345
+Jul-21,Uttar Pradesh,41,13
+Aug-21,Uttar Pradesh,26,4
+Sep-21,Uttar Pradesh,18,0
+Oct-21,Uttar Pradesh,10,0
+Nov-21,Uttar Pradesh,8,0
+Dec-21,Uttar Pradesh,14,0
+Jun-20,Madhya Pradesh,190,7
+Jul-20,Madhya Pradesh,799,11
+Aug-20,Madhya Pradesh,1363,21
+Sep-20,Madhya Pradesh,2141,34
+Oct-20,Madhya Pradesh,723,11
+Nov-20,Madhya Pradesh,1626,13
+Dec-20,Madhya Pradesh,797,10
+Jan-21,Madhya Pradesh,208,3
+Feb-21,Madhya Pradesh,334,10
+Mar-21,Madhya Pradesh,2175,102
+Apr-21,Madhya Pradesh,12935,397
+May-21,Madhya Pradesh,18221,456
+Jun-21,Madhya Pradesh,94,20
+Jul-21,Madhya Pradesh,13,0
+Aug-21,Madhya Pradesh,9,0
+Sep-21,Madhya Pradesh,14,0
+Oct-21,Madhya Pradesh,15,0
+Nov-21,Madhya Pradesh,17,3
+Dec-21,Madhya Pradesh,15,1
+Jun-20,Gujarat,598,19
+Jul-20,Gujarat,1128,23
+Aug-20,Gujarat,1230,16
+Sep-20,Gujarat,1408,12
+Oct-20,Gujarat,956,5
+Nov-20,Gujarat,1554,16
+Dec-20,Gujarat,723,6
+Jan-21,Gujarat,349,2
+Feb-21,Gujarat,398,10
+Mar-21,Gujarat,2218,102
+Apr-21,Gujarat,14305,1166
+May-21,Gujarat,2502,175
+Jun-21,Gujarat,109,30
+Jul-21,Gujarat,28,0
+Aug-21,Gujarat,13,0
+Sep-21,Gujarat,20,2
+Oct-21,Gujarat,23,0
+Nov-21,Gujarat,30,4
+Dec-21,Gujarat,47,8
+Jun-20,Jammu and Kashmir,180,6
+Jul-20,Jammu and Kashmir,511,12
+Aug-20,Jammu and Kashmir,660,1117
+Sep-20,Jammu and Kashmir,1080,7
+Oct-20,Jammu and Kashmir,494,8
+Nov-20,Jammu and Kashmir,475,14
+Dec-20,Jammu and Kashmir,200,7
+Jan-21,Jammu and Kashmir,70,10
+Feb-21,Jammu and Kashmir,82,22
+Mar-21,Jammu and Kashmir,276,65
+Apr-21,Jammu and Kashmir,2820,359
+May-21,Jammu and Kashmir,4617,17
+Jun-21,Jammu and Kashmir,376,11
+Jul-21,Jammu and Kashmir,139,8
+Aug-21,Jammu and Kashmir,143,1
+Sep-21,Jammu and Kashmir,120,0
+Oct-21,Jammu and Kashmir,87,1
+Nov-21,Jammu and Kashmir,164,0
+Dec-21,Jammu and Kashmir,171,2
+Jun-20,Rajasthan,341,7
+Jul-20,Rajasthan,1017,10
+Aug-20,Rajasthan,1391,13
+Sep-20,Rajasthan,2079,15
+Oct-20,Rajasthan,1796,12
+Nov-20,Rajasthan,2985,19
+Dec-20,Rajasthan,692,17
+Jan-21,Rajasthan,120,10
+Feb-21,Rajasthan,115,5
+Mar-21,Rajasthan,853,21
+Apr-21,Rajasthan,17155,1122
+May-21,Rajasthan,16431,4509
+Jun-21,Rajasthan,133,10
+Jul-21,Rajasthan,21,3
+Aug-21,Rajasthan,10,1
+Sep-21,Rajasthan,6,0
+Oct-21,Rajasthan,4,0
+Nov-21,Rajasthan,19,2
+Dec-21,Rajasthan,23,4
+Jun-20,Delhi,2965,63
+Jul-20,Delhi,1030,27
+Aug-20,Delhi,1746,19
+Sep-20,Delhi,3275,39
+Oct-20,Delhi,4884,41
+Nov-20,Delhi,5151,95
+Dec-20,Delhi,588,20
+Jan-21,Delhi,167,6
+Feb-21,Delhi,198,1
+Mar-21,Delhi,1600,8
+Apr-21,Delhi,24093,372
+May-21,Delhi,1117,118
+Jun-21,Delhi,117,5
+Jul-21,Delhi,60,2
+Aug-21,Delhi,40,0
+Sep-21,Delhi,33,0
+Oct-21,Delhi,38,0
+Nov-21,Delhi,31,0
+Dec-21,Delhi,71,0
+Jun-20,Tamil Nadu,3652,53
+Jul-20,Tamil Nadu,6587,88
+Aug-20,Tamil Nadu,6098,101
+Sep-20,Tamil Nadu,5658,73
+Oct-20,Tamil Nadu,2627,33
+Nov-20,Tamil Nadu,1471,13
+Dec-20,Tamil Nadu,852,12
+Jan-21,Tamil Nadu,523,6
+Feb-21,Tamil Nadu,467,5
+Mar-21,Tamil Nadu,2176,13
+Apr-21,Tamil Nadu,16467,93
+May-21,Tamil Nadu,31329,480
+Jun-21,Tamil Nadu,5183,125
+Jul-21,Tamil Nadu,1820,27
+Aug-21,Tamil Nadu,1543,23
+Sep-21,Tamil Nadu,1668,22
+Oct-21,Tamil Nadu,1058,14
+Nov-21,Tamil Nadu,736,11
+Dec-21,Tamil Nadu,720,10
+Jun-20,Kerala,142,0
+Jul-20,Kerala,945,3
+Aug-20,Kerala,2269,9
+Sep-20,Kerala,6853,21
+Oct-20,Kerala,6717,25
+Nov-20,Kerala,5272,25
+Dec-20,Kerala,4147,18
+Jan-21,Kerala,5557,19
+Feb-21,Kerala,3535,15
+Mar-21,Kerala,2097,13
+Apr-21,Kerala,31526,36
+May-21,Kerala,22970,180
+Jun-21,Kerala,11703,113
+Jul-21,Kerala,19528,116
+Aug-21,Kerala,29321,147
+Sep-21,Kerala,14511,128
+Oct-21,Kerala,7618,441
+Nov-21,Kerala,4591,298
+Dec-21,Kerala,4614,286
+Jun-20,Maharashtra,5107,189
+Jul-20,Maharashtra,9286,266
+Aug-20,Maharashtra,14163,303
+Sep-20,Maharashtra,17235,397
+Oct-20,Maharashtra,5635,117
+Nov-20,Maharashtra,5648,71
+Dec-20,Maharashtra,2665,58
+Jan-21,Maharashtra,2470,42
+Feb-21,Maharashtra,7741,52
+Mar-21,Maharashtra,33456,138
+Apr-21,Maharashtra,62971,794
+May-21,Maharashtra,21703,876
+Jun-21,Maharashtra,9117,377
+Jul-21,Maharashtra,6519,195
+Aug-21,Maharashtra,4604,137
+Sep-21,Maharashtra,2328,49
+Oct-21,Maharashtra,1160,29
+Nov-21,Maharashtra,623,33
+Dec-21,Maharashtra,598,37
+Jun-20, West Bengal,547,13
+Jul-20, West Bengal,2316,42
+Aug-20, West Bengal,2992,54
+Sep-20, West Bengal,3197,59
+Oct-20, West Bengal,4013,59
+Nov-20, West Bengal,3367,50
+Dec-20, West Bengal,1097,25
+Jan-21, West Bengal,271,8
+Feb-21, West Bengal,194,3
+Mar-21, West Bengal,721,2
+Apr-21, West Bengal,16369,74
+May-21, West Bengal,13058,146
+Jun-21, West Bengal,1774,33
+Jul-21, West Bengal,741,10
+Aug-21, West Bengal,642,9
+Sep-21, West Bengal,704,13
+Oct-21, West Bengal,922,12
+Nov-21, West Bengal,700,11
+Dec-21, West Bengal,579,10

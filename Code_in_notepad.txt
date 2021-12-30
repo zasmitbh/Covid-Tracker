@@ -1,0 +1,154 @@
+import numpy as np #
+import pandas as pd #
+import seaborn as sns #
+import matplotlib.pyplot as plt #
+import chart_studio.plotly as py #
+from plotly import __version__
+import cufflinks as cf #
+from plotly.offline import download_plotlyjs,init_notebook_mode,plot,iplot
+init_notebook_mode(connected=True)
+cf.go_offline()
+import plotly.express as px
+import plotly.graph_objects as go
+
+%matplotlib inline
+
+
+
+
+
+
+l=["Uttar Pradesh","Madhya Pradesh","Gujarat","Jammu and Kashmir","Rajasthan","Delhi","Tamil Nadu",
+  "Kerala","Maharashtra","West Bengal"]
+while(True):
+    print ("Welcome to the Covid-19-Dashboard")
+    print(" 1 ---> World Data \n 2 ---> India Data \n 3 ---> Statewise Data")
+    print(" 4 ---> Exit ") 
+    
+    choice1=int(input("What information would you like to access today?"))
+
+    if(choice1==1):
+        print()
+        print("Covid-19 Cases                ---> a ")
+        print("Geographical Covid-19 Cases   ---> b ")
+        print("Return to dashboard ---> r")
+        
+        choice2=input("Welcome to World Data , what data are you interested in?: ").strip().lower()
+        if(choice2=='a'):
+            World_Cummulative()
+        if(choice2=='b'):
+            'World_Geographical'
+        if(choice2=='r'):
+            print('*'*75)
+            continue
+    
+    elif(choice1==2):
+        print()
+        print("Covid Cases                ---> a ")
+        print("Vaccination Count          ---> b ")
+        
+        print("Return to dashboard ---> r")
+        choice2=input("Welcome to India Data , what data are you interested in?: ").strip().lower()
+        if(choice2=='a'):
+            India_Cases()
+        if(choice2=='b'):
+            India_Vac()
+        if(choice2=='r'):
+            print('*'*75)
+            continue
+            
+    elif(choice1==3):
+        print()
+        print("Uttar Pradesh         ---> 0 ")
+        print("Madhya Pradesh        ---> 1 ")
+        print("Gujarat               ---> 2 ")
+        print("Jammu and Kashmir     ---> 3 ")
+        print("Rajasthan             ---> 4 ")
+        print("Delhi                 ---> 5 ")
+        print("Tamil Nadu            ---> 6 ")
+        print("Kerala                ---> 7 ")
+        print("Maharashtra           ---> 8 ")
+        print("West Bengal           ---> 9 ")
+        print("***Compare two States ---> 10")
+        print("Return                ---> 11")
+        
+        print()
+        choice2=int(input("Welcome to Statewise Data , what data are you interested in?: "))
+        
+        if(choice2==11):
+            print('*'*75)
+            continue
+        elif(choice2==10):
+            Compare()
+        else:
+            State(choice2)
+            
+    elif(choice1==4):
+        break
+
+
+def World_Cummulative():
+    dfw_cummulative=pd.read_csv('worldwide-aggregate.csv')
+    dfw_cummulative.iplot(x='Date',y='Confirmed',title=' Cummulative World Covid-19 Cases ',kind='bar')
+
+#def World_Geographical():
+df_geo=pd.read_csv('countries-aggregated.csv')
+figure=px.choropleth(df_geo,locations='Country',locationmode='country names',color='Confirmed',animation_frame='Date')
+figure.update_layout(title='World - Covid-19 Cases Timeline',template='seaborn')
+figure.show()
+
+#The Geographical Map is not linked to the menu as it takes a long time to load
+#It will run independently before the presentation
+
+
+def India_Cases():
+    df_Ind=pd.read_csv('India_casesc.csv')
+    df_Ind.iplot(kind='scatter',x='MONTH',y='Cases',mode='markers',title='Covid-19 Cases in India',color='blue')
+
+
+def India_Vac():
+    df_IndV=pd.read_csv('india vaccinationc.csv')
+    fig = go.Figure()
+    fig.add_trace(go.Scatter(x=df_IndV['Month'], y=df_IndV['First_Dose'], fill='tozeroy',name="First Dose")) 
+    fig.add_trace(go.Scatter(x=df_IndV['Month'], y=df_IndV['Fully_Vaccinated'], fill='tozeroy',name="Fully Vaccinated")) 
+
+    fig.show()
+
+
+def Compare():
+    print('*'*75)
+    print("Which states would you like to compare?: ")
+    s1=int(input("Enter First State: "))
+    s2=int(input("Enter Second State: "))
+    name1=''
+    name2=''
+    #print(s1," ",s2)
+    df=pd.read_csv('Statewise_Datac.csv')
+
+    name1=l[s1]
+    name2=l[s2]
+    
+    #print(name1," ",name2)
+    
+    df_comp=df[(df['State']==name1)|(df['State']==name2)]
+    sns.set(rc = {'figure.figsize':(15,8)})
+    sns.barplot(x='MONTH',y='NO. OF CASES',hue='State',data=df_comp,palette='viridis')
+    plt.show()
+
+
+
+
+def State(ns):
+    df=pd.read_csv('Statewise_Datac.csv')
+    #df.drop(['Unnamed: 3','Unnamed: 5','Unnamed: 6','Unnamed: 7','Unnamed: 8'],axis=1,inplace=True)
+    #df.columns
+    #name of state = ns
+    name=l[ns]
+    print(name)
+
+    df_state=df[df['State']==name]
+
+    #df_state=df[df['State']=="Madhya Pradesh"]
+    #df_state.iplot(x='MONTH',df_state.columns[2:],title='Covid Cases in State')
+    fig = px.line(df_state, x='MONTH', y=df.columns[2:])
+    fig.show()
